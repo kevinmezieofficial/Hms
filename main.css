@@ -1,0 +1,180 @@
+/* ===== Dashboard Layout (moved from style.css) ===== */
+.dashboard-body {
+    background: #eef2f7; /* dashboard page background */
+}
+
+.dashboard-layout {
+    min-height: 100vh; /* fill full browser height */
+    /* Dashboard uses Bootstrap grid now */
+}
+
+.sidebar {
+    background: var(--color-text); /* dark sidebar background */
+    color: #ffffff; /* white text */
+    padding: 24px; /* inside spacing */
+    display: flex; /* vertical layout using flexbox */
+    flex-direction: column; /* stack sidebar items */
+    gap: 24px; /* spacing between sidebar sections */
+}
+
+.sidebar h2 {
+    font-size: 20px; /* sidebar title size */
+    text-transform: uppercase; /* uppercase title */
+    letter-spacing: 1px; /* add letter spacing */
+}
+
+.sidebar nav ul {
+    display: flex; /* stack links using flexbox */
+    flex-direction: column; /* vertical links */
+    gap: 12px; /* spacing between nav links */
+}
+
+.sidebar a {
+    color: #ffffff; /* white links */
+    font-weight: 600; /* semi-bold links */
+}
+
+.sidebar a:hover {
+    color: var(--color-secondary); /* green on hover */
+}
+
+.dashboard-main {
+    padding: 32px; /* spacing around main content */
+    display: flex; /* stack main sections */
+    flex-direction: column; /* vertical flow */
+    gap: 24px; /* space between sections */
+}
+
+.dashboard-header {
+    background: var(--color-surface); /* white card background */
+    padding: 20px; /* inner spacing */
+    border-radius: 16px; /* rounded corners */
+    box-shadow: var(--shadow-soft); /* soft shadow */
+    display: flex; /* stack header text using flexbox */
+    flex-direction: column; /* vertical text */
+    gap: 8px; /* space between lines */
+}
+
+.dashboard-header p {
+    color: var(--color-muted); /* muted subtitle */
+}
+
+.dashboard-card {
+    background: var(--color-surface); /* white card */
+    border-radius: 16px; /* rounded corners */
+    padding: 20px; /* inner spacing */
+    border: 1px solid var(--color-border); /* light border */
+    box-shadow: var(--shadow-soft); /* soft shadow */
+}
+
+.dashboard-card h3 {
+    color: var(--color-primary); /* blue title */
+}
+
+.detail-panel {
+    background: var(--color-surface); /* white panel */
+    padding: 20px; /* inner spacing */
+    border-radius: 16px; /* rounded corners */
+    border: 1px solid var(--color-border); /* light outline */
+    box-shadow: var(--shadow-soft); /* soft shadow */
+}
+
+.detail-panel ul {
+    display: flex; /* stack list rows using flexbox */
+    flex-direction: column; /* vertical list */
+    gap: 10px; /* spacing between rows */
+    margin-top: 12px; /* space above list */
+}
+
+.detail-panel li {
+    display: flex; /* label + value in a row */
+    justify-content: space-between; /* push label left, value right */
+    color: var(--color-muted); /* muted row text */
+}
+
+/* ===== Flexbox Demo Page (moved from style.css) ===== */
+.flex-page-body {
+    background: #020617; /* very dark background */
+    color: #e5e7eb; /* light text */
+    font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif; /* font stack */
+}
+
+.flex-page-main {
+    max-width: 900px; /* content width */
+    margin: 48px auto; /* center content */
+    padding: 0 16px 48px; /* side + bottom padding */
+}
+
+.flex-page-main h1 {
+    margin-bottom: 12px; /* space below title */
+}
+
+.flex-page-intro {
+    color: #cbd5f5; /* softer intro color */
+    margin-bottom: 24px; /* space below intro */
+}
+
+.flex-section {
+    margin-top: 32px; /* space between sections */
+}
+
+.flex-section-note {
+    color: #9ca3af; /* muted note text */
+    margin: 4px 0 16px; /* spacing above and below note */
+}
+
+.flex-demo {
+    display: flex;          /* FLEX STARTS HERE */
+    gap: 12px; /* space between items */
+    padding: 12px; /* inner spacing for the demo box */
+    margin-bottom: 16px; /* space below each demo */
+    border-radius: 12px; /* rounded corners */
+    background: rgba(15, 23, 42, 0.7); /* dark background so items stand out */
+}
+
+.flex-item {
+    background: var(--color-primary); /* blue box background */
+    color: #ffffff; /* white text */
+    padding: 10px 14px; /* box padding */
+    border-radius: 8px; /* rounded corners */
+    text-align: center; /* center text */
+    font-weight: 600; /* bold-ish text */
+    min-width: 48px; /* minimum box width */
+}
+
+.flex-item-tall {
+    padding-top: 28px; /* make item taller (top) */
+    padding-bottom: 28px; /* make item taller (bottom) */
+}
+
+.flex-direction-row {
+    /* Children flow in a row, from left to right (default) */
+    flex-direction: row; /* items go left → right */
+}
+
+.flex-direction-column {
+    /* Children are stacked vertically, top to bottom */
+    flex-direction: column; /* items go top → bottom */
+}
+
+.flex-justify-space-between {
+    flex-direction: row; /* keep items in a row */
+    justify-content: space-between; /* spread items across the row */
+}
+
+.flex-justify-center {
+    flex-direction: row; /* keep items in a row */
+    justify-content: center; /* center items horizontally */
+}
+
+.flex-align-center {
+    flex-direction: row; /* keep items in a row */
+    justify-content: center; /* center items left/right */
+    align-items: center; /* center items up/down */
+}
+
+.flex-wrap-demo {
+    flex-direction: row; /* keep items in a row */
+    flex-wrap: wrap; /* allow items to wrap to a new line */
+}
+
